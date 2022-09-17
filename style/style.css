@@ -8,6 +8,7 @@
    src: url('../assets/fonts/Gilroy-Medium.ttf');
 }
 
+
 html {
    scroll-behavior: smooth; 
 }
@@ -16,22 +17,17 @@ body {
    font-family: 'Gilroy-Bold';
    margin: 0;
    padding: 0;
-   /* background-color: #FFFFFF; */
+   
 }
 
 .container {
    max-width: 1200px;
-   /* max-width: 1445px; */
    margin: 0 auto;
    padding: 0 0;
 }
 
+/* header */
 
-/* .header {
-   background-color: #FFFFFF;
-   padding: 0px 250px 0px 248px;
-   height: 88px;
-} */
 
 .header__wrapper {
    border-bottom: 1px solid #828282;
@@ -61,9 +57,7 @@ body {
 
 }
 
-/* main {
-   width: 1445px;
-} */
+/* section home */
 
 .home__description {
    display: flex;
@@ -97,7 +91,7 @@ body {
 
    transform: rotate(-90deg);
 
-   margin-bottom: 20px;
+   height: 61px;
 }
 
 .lang__link {
@@ -108,6 +102,10 @@ body {
 
    text-decoration: none;
    text-transform: uppercase;
+}
+
+.active {
+   color: #000000;
 }
 
 .lang__link:hover {
@@ -129,6 +127,9 @@ body {
    margin: 50px 0px 107px 0px;
 }
 
+
+/* section about me */
+
 .aboutme {
    background-color: #F6F6F6;
    
@@ -136,7 +137,6 @@ body {
 
 .aboutme__wrapper {
    padding: 120px 0px 107px 0px;
-   margin-bottom: 91px;
    
 
    display: flex;
@@ -160,6 +160,231 @@ body {
 
    color: #070707;
 }
+
+/* section skills */
+
+.skills__wrapper {
+   display: flex;
+   flex-direction: column;
+
+   padding: 91px 0px 110px 0px;
+   
+}
+
+.skills__title {
+   
+   font-size: 34px;
+   line-height: 42px;
+   text-align: center;
+
+   margin: 0px 0px 69px;
+
+   color: #070707;
+}
+
+.skills__text {
+   font-family: 'Gilroy-Medium';
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+
+   margin: 0px;
+
+   color: #070707;
+
+}
+
+.skills__programs {
+   display: flex;
+   justify-content: space-around;
+
+   margin-top: 83px;
+}
+
+.s-programs__desccription {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.s-programs__desccription p {
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+
+   color: #828282;
+
+   margin: 24px 0px 40px;
+}
+
+.img__stars {
+   padding-right: 9px;
+}
+
+.img__stars:last-child {
+   padding-right: 0px;
+}
+
+/* section portfolio */
+
+.portfolio {
+   background-color: #F6F6F6;
+}
+
+.portfolio__wrapper {
+   display: flex;
+   flex-direction: column;
+
+   padding: 113px 0px 0px;
+
+}
+
+.portfolio__title {
+   font-size: 34px;
+   line-height: 42px;
+   text-align: center;
+
+   color: #070707;
+
+   margin: 0px 0px 47px;
+}
+
+.p-description__bg {
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   height: 522px;
+}
+
+
+/* backgrounds portfolio*/
+
+.fashion  {
+   background-image: url('../assets/images/Слой\ 1.jpg');
+}
+
+.reebok {
+   background-image: url('../assets/images/Слой\ 2.jpg');
+}
+
+.braun {
+   background-image: url('../assets/images/Слой\ 3.jpg');
+}
+
+.portfolio__description a {
+   display: block;
+   
+   font-family: 'Gilroy-Medium';
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   text-decoration-line: underline;
+
+   color: #070707;
+
+   margin: 45px 0px 99px;
+}
+
+.portfolio__description a:hover {
+   font-family: 'Gilroy-Bold';
+}
+
+
+/* footer */
+
+.contacts__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: 114px 0px 123px ;
+}
+
+.contacts__title {
+   font-size: 34px;
+   line-height: 42px;
+
+   color: #070707;
+
+   margin: 0px 0px 20px;
+}
+
+.contacts__text {
+   font-family: 'Gilroy-Medium';
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+
+   color: #070707;
+
+   margin: 0px 0px 30px;
+}
+
+.contacts__btn {
+   padding: 13px 30px 13px 28px;
+
+   background: #070707;
+   border-radius: 100px;
+   text-decoration: none;
+
+   margin: 0px 0px 86px;
+}
+
+.contacts__btn:hover {
+   box-shadow: 10px 10px 10px rgba(99, 7, 109, 0.2);
+}
+
+.contacts__btn span {
+   font-size: 18px;
+   line-height: 22px;
+
+   text-align: center;
+
+   color: #FFFFFF;
+}
+
+
+.c-links__social {
+   text-decoration: none;
+
+   margin-right: 62px;
+}
+
+.c-links__social:last-child {
+   margin-right: 0px;
+}
+
+.c-links__img:hover {
+   border-radius: 40%;
+   box-shadow: 7px 7px 7px rgba(99, 7, 109, 0.2);
+}
+
+.contacts__description {
+   font-family: 'Gilroy-Medium';
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+
+   color: #828282;
+
+   margin: 46px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
