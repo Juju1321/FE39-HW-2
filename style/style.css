@@ -218,13 +218,24 @@ body {
    margin: 24px 0px 40px;
 }
 
-.img__stars {
-   padding-right: 9px;
+
+.s-description__stars span {
+   padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+
+	color: #E5E5E5;
 }
 
-.img__stars:last-child {
-   padding-right: 0px;
+.s-description__stars > span:before {
+	content: '★';
 }
+
+.s-description__stars > span.active {
+	color: #070707;
+}
+
 
 /* section portfolio */
 
