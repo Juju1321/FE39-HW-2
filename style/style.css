@@ -263,7 +263,8 @@ body {
 
 .p-description__bg {
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: contain;
+   background-position: center;
 
    height: 522px;
 }
@@ -344,6 +345,8 @@ body {
 
 .contacts__btn:hover {
    box-shadow: 10px 10px 10px rgba(99, 7, 109, 0.2);
+
+   transition: all 0.5s;
 }
 
 .contacts__btn span {
@@ -369,6 +372,7 @@ body {
 .c-links__img:hover {
    border-radius: 40%;
    box-shadow: 7px 7px 7px rgba(99, 7, 109, 0.2);
+   transition: all 0.5s;
 }
 
 .contacts__description {
@@ -382,20 +386,239 @@ body {
    margin: 46px 0px 0px;
 }
 
+.burger {
+   display: none;
+}
 
 
+.hh {
+   display: contents;
+}
 
 
+@media screen  and (min-width: 992px) and (max-width: 1199px) {
+   .container {
+      margin: 0 auto;
+      max-width: 90%;
+   }
+}
+
+@media screen  and (min-width: 768px) and (max-width: 991px) {
+   .container {
+      margin: 0 auto;
+      max-width: 90%;
+   }
+
+   .skills__programs {
+      flex-wrap: wrap;
+
+      margin-top: 0px;      
+   }
+
+   .portfolio {
+      padding: 40px;
+   }
+
+   .portfolio__wrapper { 
+      padding-top: 20px;
+   }
+
+   .portfolio__title {
+      margin-bottom: 0px;
+   }
+
+.portfolio__description a {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+}
+
+@media screen  and (max-width: 767px) {
+   .container {
+      margin: 0 auto;
+      max-width: 90%;
+   }
 
 
+   header {
+      display: none;
+   }
+
+   .h-description__title {
+      margin-top: 65px;
+   }
+
+   .h-description__text {
+      margin-top: 23px;
+   }
+
+   .h-description__lang {
+      display: none;
+   }
+
+   .burger {
+      display: flex;
+      justify-content: flex-end;
+
+      width: 33px;
+      height: 19.19px;
+
+      margin-top: 78px;
+
+   }
+
+   .home__description {
+      /* flex-direction: column; */
+      align-items: flex-start;
+   }
+
+   .hh {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .home__bg {
+      background-position: center;
+
+      margin-top: 37px;
+      margin-bottom: 83px;
+   }
+
+   .aboutme__wrapper {
+      padding: 81px 0px 76px;
+   }
+
+   .aboutme__title {
+      margin: 0px;
+      margin-bottom: 30px;
+   }
+
+   .aboutme__text p {
+      margin-bottom: 29px;
+   }
+
+   .aboutme__text p:last-child {
+      margin-bottom: 0px;
+   }
+
+   .skills__wrapper {
+      padding: 83px 0px 99px;
+   }
+
+   .skills__title {
+      margin-bottom: 50px;
+   }
+
+   .skills__text {
+      margin-bottom: 10px;
+   }
+
+   .skills__programs {
+      flex-wrap: wrap;
+
+      margin-top: 0px;
+
+   }
+
+   .s-programs__desccription {
+      margin-top: 81.71px;
+   }
+
+   .portfolio__wrapper {
+      padding-top: 81px;
+   }
 
 
+   .p-description__bg {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 171px;
+  }
+
+  .portfolio__description a {
+   margin: 33px 0px 78px;
+  }
+
+  .portfolio__description a:last-child {
+   margin-bottom: 81px;
+  }
+
+  .contacts__wrapper {
+   padding-top: 82px;
+   padding-bottom: 90px;
+  }
+
+  .contacts__title {
+   margin-bottom: 27px;
+  }
+
+  .contacts__text {
+   margin-bottom: 40px;
+  }
+
+  .contacts__btn {
+   margin-bottom: 48px;
+
+   padding: 12px 97px;
+  }
+
+  .c-links__social {
+   margin-right: 51.83px;
+  }
+
+  .contacts__description {
+   margin-top: 49px;
+  }
+}
 
 
+@media screen  and (min-width: 598px) and (max-width: 908px) {
+   .s-programs__desccription {
+      width: 50%;
+      margin-top: 81.71px;
+   }
+}
 
+@media screen  and (min-width: 320px) and (max-width: 440px) {
+   .s-programs__desccription {
+      width: 100%;
+   }
 
+   .h-description__title {
+      font-size: 250%;
+   }
 
+   .contacts__btn {
+      padding: 14px 73px;
+   }
 
+   .c-links__social {
+      margin-right: 25px;
+   }
+}
 
+@media screen  and (min-width: 280px) and (max-width: 321px) {
+   .h-description__title {
+      font-size: 200%;
+      margin-top: 50px;
+      line-height: 40px;
+   }
+   
+   .burger {
+      margin-top: 50px;
+   }
 
+   .contacts__btn {
+      padding: 14px 70px;
+   }
 
+   .contacts__btn span {
+      font-size: 15px;
+   }
+
+   .c-links__social {
+      margin-right: 25px;
+   }
+
+}
