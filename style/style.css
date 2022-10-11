@@ -411,11 +411,27 @@ body {
 
    .skills__programs {
       flex-wrap: wrap;
-      
+
+      margin-top: 0px;      
    }
 
-}
+   .portfolio {
+      padding: 40px;
+   }
 
+   .portfolio__wrapper { 
+      padding-top: 20px;
+   }
+
+   .portfolio__title {
+      margin-bottom: 0px;
+   }
+
+.portfolio__description a {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+}
 
 @media screen  and (max-width: 767px) {
    .container {
@@ -606,11 +622,3 @@ body {
    }
 
 }
-
-
-
-
-
-
-
-
